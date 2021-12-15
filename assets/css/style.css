@@ -1,9 +1,9 @@
 :root {
-  --main-bg-color: #c6c6c6
+  --main-bg-color: #f5f3f0;
   --main-txt-color: #262626;
   --bold-bg-color: #2f8eb6;
-  --secondary-bg-color: #bea27f;
-  --tertiary-bg-color: #a9acad;
+  --secondary-bg-color: #48D1CC;
+  --tertiary-bg-color: #7eb7cf;
 }
 
 /* GENERAL */
@@ -66,7 +66,7 @@ ul {
   margin-right: .25em;
   font-weight: normal;
   text-align: center;
-}
+} 
 
 .navbar a:hover:not(.active) {
   background-color: var(--tertiary-bg-color);
@@ -77,6 +77,52 @@ ul {
   background-color: var(--bold-bg-color);
 }
 
+/* DROPDOWN */
+.dropdown .dropbtn {
+  background-color: inherit;
+  font-size: inherit;  
+  padding: 1em 1em 1em 1em;
+  /* margin-left: .25em; Removed for aligning issues  with drop content*/
+  margin-right: .25em;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: var(--tertiary-bg-color);
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* min-width: 160px; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  background-color: var(--main-bg-color);
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--main-txt-color);
+  padding: 1em 1em 1em 1em;
+  margin-left: .25em;
+  margin-right: .25em;
+  margin: 0em;
+  display:  block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--tertiary-bg-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* COVER IMAGE */
 .cover {
   background-color: var(--main-bg-color);
 }
@@ -287,10 +333,13 @@ ul {
   .navbar {
     height: 250px;
     display: grid;
-
+  }
+  .dropdown a {
+    line-height: 2em;
   }
   .navbar a {
     list-style-type: none;
+    padding-bottom: 0px;
   }
   .row {
     width: 90%;
@@ -304,6 +353,9 @@ ul {
     display: grid;
   }
   .navbar a {
+    font-size: 34px;
+  }
+  .dropdown {
     font-size: 34px;
   }
   body {
