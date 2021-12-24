@@ -252,9 +252,12 @@ h4 {
   font-weight: 500;
 }
 
-.project p { /*Text as caption*/
+p.fig-cap { /*Text as caption*/
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   font-style: italic;
+  max-width: 80%;
 }
 
 .project img {
