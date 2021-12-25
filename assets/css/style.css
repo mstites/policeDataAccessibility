@@ -257,12 +257,12 @@ p.fig-cap { /*Text as caption*/
   margin-right: auto;
   margin-left: auto;
   font-style: italic;
-  max-width: 80%;
+  max-width: 85%;
 }
 
 .project img {
   height: auto;
-  max-width: 85%;
+  max-width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
