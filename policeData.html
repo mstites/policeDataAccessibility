@@ -16,7 +16,9 @@
   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/2a97e054bf.js" crossorigin="anonymous"></script>
 </head>
@@ -45,63 +47,174 @@
   <div class="container">
     <div class="row top">
       <h1>Police Source Data</h1>
-      <p>To see information on the research process, and other relevant notes click <a href="policeDataNotes.html">here</a>.</p>
-      <p>Police Source Data
-        This page is about answering what I think is the most important question of this project: can data projects get
-        the police source data they need? When I say police source data, I am referring to the raw data that is
-        collected by police departments that ideally, people can access to perform various analyses on. Examples of data
-        projects using various forms of policing data can be seen on the Data Project Spotlight page.
-      </p>
-      <p>Below I outline my process and an overview of the results of my searching experience. But you can also skip
-        straight to the acquiring data section if you would just like to read the raw information on what it is like to
-        obtain this data.</p>
-      <div>
-        <!--Process section-->
-        <h2>Process</h2>
-        <p>When I went to answer the question of police data accessibility, my goal was to find answers to a few key
-          questions:</p>
-        <ol>
-          <li>What is the policy regarding obtaining policing data? I.e. How should it work in theory according to
-            legislation?</li>
-          <li>What is the real world experience of data projects, and data scientists, when gathering data for data
-            advocacy projects?</li>
-          <li>And, related to the above, what is the quality of the data once (/if) obtained?</li>
-        </ol>
-        <p>These three questions were chosen to help provide a broad overview of what the state of police data
-          accessibility is like. I also believed that answering these questions would cover the most commonly asked
-          questions that I get when I bring up my work using policing data. I don’t have all the answers, even though I
-          do that work, and I wanted to find at least the beginnings of them.</p>
-        <p>For finding answers, I conducted a number of searches to draw on a broad array of potential sources. These
-          sources included database searches for academic papers and articles, data advocacy projects, articles written
-          by data scientists doing this work, legal resources about policy, government databases, and official
-          government websites on legislation and records requests processes. </p>
-      </div>
-      <div>
-        <!-- Results in Short-->
-        <h3>Results in Short</h3>
-        <p>I found a number of large data advocacy projects that included insightful information on their records
-          request experiences. This combined with articles written by people doing this work and the exploration of
-          government data portals allowed me to confidently provide perspective on questions #2 and #3.</p>
-        <p>Hoever, I was ultimately unable to find the kinds of information I really desired to answer the questions
-          regarding police data acquisition policy. While I was able to find ample information on federal data processes
-          (under FOIA, more information below), I was unable to find reputable, up-to-date, and applicable sources for
-          the state legislation which covers policing data (often called FOI legislation, varies significantly state to
-          state).</p>
-      </div>
-      <div class="row">
-        <h1> References </h1>
-        <ol>
-          <li>source - can also put these on the about page (but maybe store these here for now)</li>
-        </ol>
-      </div>
-      <div class="row">
-        <div class="footer">
-          <ul>
-            <li><a href="about.html">Sources & About</a></li>
-          </ul>
-        </div>
+      <p>To see information on the research process, and other relevant notes click <a
+          href="policeDataNotes.html">here</a>.</p>
+      <p>The basis of any data project relies on access to quality, relevant data. For data projects using policing data
+        to be viable, they need to be able to gain access to this data. On this page, I outline the key places that
+        police source data can be acquired, and use my critical lens as someone with data science and anti-carceral
+        perspectives to provide insights into the accessibility issues of acquiring this data.</p>
+      <p>My goal is that readers can come away with...</p>
+      <ol>
+        <li><b>An understanding of how policing organizations, in many cases, effectively hide or hinder access to data
+            that could be used to show harm to their communities.</b> When policing data is hard to access, it prevents
+          data work from analyzing their harms, implantation thus helping to protect their place in society While there
+          are other ways to show police harms, I believe data advocacy surrounding the analysis of police racism has the
+          potential to persuade meaningful legislative changes or to persuade more people to join anti-police,
+          anti-prison movements. I make this claim based on the value that “hard data'' has in society, and there are
+          certainly many people in my own life that have only been able to be moved politically when presented with
+          information in said fashion.</li>
+        <li><b>Some more context and transparency on how data advocacy projects operate in this space, and more room for
+            imagination</b> of the potential for data advocacy projects in abolition.</li>
+        <li><b>An understanding of where to start looking for police data for purposes of a project or for exploratory
+            purposes.</b></li>
+      </ol>
+      <h2>Places to Get Data</h2>
+      <p>From my search, I identified three major routes to acquire policing data, listed below:</p>
+      <ol>
+        <li>Publicly accessible government data portals (federal, state, or department)</li>
+        <li>Data advocacy projects that have already collected data</li>
+        <li>Public records requests</li>
+      </ol>
+      <h3>Government Data Portals</h3>
+      <p>Some amount of data is already available publicly on government data portals. Examples of these portals
+        include:</p>
+      <ol>
+        <li><b>Federal government portals.</b> Police departments are state entities, so most of their data will not be
+          on federal data portals. However,gov, which primarily hosts federal data, also allows state, local, and tribal
+          governments to publish (<a
+            href="https://resources.data.gov/resources/data-gov-open-data-howto/">data.gov</a>). Data.gov was created
+          under the <a href="https://www.congress.gov/115/plaws/publ435/PLAW-115publ435.pdf">OPEN Government Data
+            Act</a> and managed by the U.S. General Services (<a href="https://www.data.gov/about">data.gov</a>). The
+          site mostly doesn’t host data directly but serves as a centralized access point for various datasets.</li>
+        <li><b>State, city, or county government data portals such as Boston, MA’s <a
+              href="https://data.boston.gov/">Analyze Boston open data hub.</a></b> However, not every state, city, or
+          county will have similar data portals, particularly in respect to policing data. For example, I am working on
+          a team doing work in Brockton, MA. Even though that is also within the commonwealth of Massachusetts, and
+          right next door to Boston, Brockton has no comparable data hub or open data initiative.</li>
+      </ol>
+      <p>There can however still be problems even with the publicly accessible data portals. Datasets may be incomplete
+        or have redacted information that may prevent the dataset from being useful in analysis. For example, a good
+        number of the datasets I checked from the data.gov searches did not have any race column, which would prevent
+        any sort of racial bias analysis.</p>
+      <h3>Other Data Advocacy Projects</h3>
+      <p>Data advocacy projects that have performed work on policing data that they obtained through public records
+        requests, or via non-government collection means, often leave a public download to the dataset (such as the
+        Police Score Card’s <a href="https://policescorecard.org/">source data drive folder link</a>). This is a useful
+        strategy to allow other data scientists to do other analyses using the same dataset without having the effort
+        and expense of having to obtain data.</p>
+      <p>There are also scenarios where a data advocacy effort may be just obtaining the dataset, and that data can be
+        used similarly. For example, the <a href="https://www.wokewindows.org/https://www.wokewindows.org/">Woke Windows
+          Project</a> a provides a variety of data sources for the Boston Police Department. Some of their data is
+        synthesized from publicly available information, which will ease the work of future data scientists. But they
+        also include data that was acquired through public records requests to the City of Boston, the Commonwealth of
+        Massachusetts, and other entities (<a href="https://www.wokewindows.org/exports#citations">Woke Windows Data
+          Export</a>)</p>
+      <p>Not all data advocacy projects have a download, but I know many would give over the data if requested. Although
+        I cannot speak to all rationales for not including a download, in my own work we have kept datasets and analysis
+        source files private at times for fear that they could be misused or misinterpreted if gotten in the wrong hands
+        (such as police unions).</p>
+      <h3>Public Records Request</h3>
+      <p>Much of the time, policing data required for an analysis won’t be available publicly. For instance, there is no
+        published comprehensive data on police violence or misconduct (Police Score Card). This means that to do an
+        analysis on this, data would have to be requested through public records requests. However, based on both my
+        research and personal experiences, public records requests can be a complicated process that doesn’t always get
+        you where you want. Below I have outlined a number of barriers and issues when it comes to requesting policing
+        data. This list is based on the synthesis of two major data advocacy projects and articles by Sarah Ryley, an
+        investigative and data journalist for the Boston Globe. The two data advocacy projects I used for this section
+        are the Police Score Card Project and the Mapping Police Violence Project. More details about these projects can
+        be seen on the data spotlight page.</p>
+      <p>Potential issues and barriers when requesting policing data...</p>
+      <ol>
+        <li>
+          <p><b>Even with data requests, police still continue to hide substantial amounts of data.</b> There are only
+            12 states where data on police officer’s disciplinary records are open (the data which would be required for
+            an analysis on police violence or misconduct), with 36 states either having restrictions or prohibiting the
+            sharing of these records altogether (<a href="https://www.wnyc.org/story/police-misconduct-records/">
+              WNYC</a>). And even in states where “this information is supposed to be public record, local police
+            agencies often refuse to comply with public records requests” (<a href="https://policescorecard.org/">Police
+              Score Card</a>).</p>
+
+          <p>The <a href="https://mappingpoliceviolence.org/">Mapping Police Violence</a> project, found that "law
+            enforcement agencies across the country" failed to provide them with information about the lives they had
+            taken, even with the reporting mandate from the Death in Custody Reporting Act (<a
+              href="https://mappingpoliceviolence.org/">Mapping Police Violence</a>). Their project, arguably the most
+            comprehensive of its type, was only able to identify 459/1140 (40%) of the officers who had killed people in
+            2020, even with using crowdsourced information to fill in missing data from public records requests (<a
+              href="https://mappingpoliceviolence.org/">Mapping Police Violence</a>).</p>
+        </li>
+        <li>
+          <p><b>Submitting successful public records requests can depend on having a certain level of technical
+              knowledge which many people will not possess.</b> Sarah Ryley, an investigative and data journalist for
+            the
+            Boston Globe,
+            made a guide with recommendations on <a
+              href="https://www.thetrace.org/2020/01/police-data-documentation-public-records-requests/#documentation-links">
+              how to make a solid public records request</a>. This guide is based on her experience filing dozens of
+            records
+            requests for policing data. While I invite you to read her full article, the key takeaway for this section
+            is that substantial technical and legal know-how is required to navigate public records requests
+            successfully. Technical knowledge is required to know how to frame the request: what values to ask for,
+            how to specify details regarding databases and formats to ensure getting quality and complete datasets,
+            and capability to understand policing database systems to ensure you are getting all of the data you
+            should be. Legal knowledge is required to navigate common objections that could prevent you from getting
+            data, such as claims that it would be necessary to create a new program to extract data.</p>
+          <p>This is also evident when looking through Police Score Card requests (See <a
+              href="https://www.muckrock.com/foi/pinellas-county-10455/police-data-collection-project-pinellas-county-sheriffs-office-97754/">Pinellas
+              County Sheriff</a> and <a
+              href="https://www.muckrock.com/foi/rapid-city-30141/police-data-collection-project-rapid-city-police-department-98427/#file-878340">Rapid
+              City Police</a> public record requests for example) which do a lot of work to address potential roadblocks
+            and ensure that they get the correct data. However, even with this know-how and effort, they had issues
+            getting all the data they needed.</p>
+        </li>
+        <li><b>There can be substantial financial or time barriers to getting data.</b> Public records requests can take
+          a long
+          time, due to delays in responses or high quoted times for claims that it would be necessary to manually redact
+          information file by file (<a
+            href="https://www.thetrace.org/2020/01/police-data-documentation-public-records-requests/#documentation-links">Sarah
+            Ryley</a> and <a href="https://mappingpoliceviolence.org/">Mapping Police Violence</a>). Requests can also
+          become insurmountable due to
+          extraordinary high quotas. The Police Score card received a $62,173.02 quote from a Sheriff's Office in
+          Florida. Hryley also cites high quotes in her article as a problem.</li>
+      </ol>
+      <h2>Reflection in the Context of my Experiences</h2>
+      <p>These issues regarding police data accessibility makes sense, given the troubles I have experienced working on
+        a team trying to request police citation data from the Brockton (MA) Police Department. Requesting one dataset,
+        from one department, took 9 months with numerous appeals, including one appeal to the Secretary of the
+        Commonwealth. We cited precedent, obtained information about the internals of their policing database to create
+        a list of steps on how they could export our data to strengthen our request, and the request still ran into
+        obstacle after obstacle.</p>
+      <p>The original quote for our request was an absolutely unaffordable quote of $39K with a 275 day wait estimate,
+        with the department citing the need to individually edit every file for data privacy purposes. We didn’t end up
+        owing any money, but we were only able to disprove their need to individually edit every file by having the
+        privilege to have technical knowledge and time to prove otherwise with strong evidence to their IT and legal
+        departments. This is not knowledge or time that everyone will have the privilege to have.</p>
+      <h2>Conclusion</h2>
+      <p>Even if technically the data is open under legislation, there are clearly still departments that are either
+        reluctant or otherwise incompetent when it comes to handing over data (Police Score Card, Mapping Police
+        Violence). This is a barrier to acquiring data, particularly for those who may not have the time or resources
+        for lengthy follow ups and/or appeals on public records requests. These barriers must be considered when
+        exploring the validity of data projects in the context of abolitionist efforts.</p>
+      <p>Regardless of the reasons for these barriers to access, the effect is that it is very difficult to get data to
+        quantify the harms that police are doing in the communities that they are in.</p>
+      <h2>Resources on Federal Requests (FOIA)</h2>
+      <ul>
+        <li><a href="https://nsarchive2.gwu.edu/nsa/foialeghistory/legistfoia.htm#:~:text=FOIA%20Legislative%20History&text=1966%20Passage%20-%20The%20FOIA%20was,went%20into%20effect%20in%201967.">FOIA Legislative History</a> - detailed information on all of the FOIA acts and amendments of all the acts</a></li>
+        <li><a href="https://www.britannica.com/topic/Freedom-of-Information-Act">Britannica FOIA Short Info Guide and History</a> - overview of FOIA shortcomings and its early history, less details on amendments</li>
+        <li><a href="https://www.foia.gov/?id=308ccf48-e6c3-4533-aca4-b883e9fd8a9a&type=component">Foia.gov</a> - homepage for submitting requests for eligible organizations including information on required info, legislation, and processing time. It is interesting to note that the requests labeled as “complex” generally have very long fill times, such as the CIA’s 332 hour average processing time.<ul><li><a href="https://www.foia.gov/how-to.html">FOIA Request Guide from foia.gov</a></li></ul></li>
+      </ul>
+      <h2>Other Resources</h2>
+      <ul>
+        <li><a href="https://docs.google.com/presentation/d/1jea-8ivPxqONKaP_eSdsUnzUnE-hP2PkQsCE_sO3eHg/edit#slide=id.p">Sarah Ryley Public Records Request Guide</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="footer">
+        <ul>
+          <li><a href="about.html">Sources & About</a></li>
+        </ul>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
