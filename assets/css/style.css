@@ -249,9 +249,9 @@ h4 {
   font-weight: 500; /* Lighten text, default h3 is bold (700) */
 }
 
-.project a {
+/* .project a {
   font-weight: 500;
-}
+} */
 
 p.fig-cap { /*Text as caption*/
   text-align: center;
